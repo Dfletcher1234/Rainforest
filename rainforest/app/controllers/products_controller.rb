@@ -11,7 +11,7 @@ class ProductsController < ApplicationController
     else
       render :new
     end
-
+    flash.notice = "You added a new product to our store, Fantastic!"
   end
 
   def new
@@ -21,6 +21,7 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all
+
   end
 
   def show
@@ -30,6 +31,7 @@ class ProductsController < ApplicationController
 
   def edit
     @product = Product.find(params[:id])
+
 
 
 
@@ -45,7 +47,7 @@ class ProductsController < ApplicationController
     else
       render :edit
     end
-
+    flash.notice = "You edited a product, Gold Star!!!"
   end
 
   def destroy
@@ -55,6 +57,7 @@ class ProductsController < ApplicationController
     else
       render :show
     end
+    flash.notice = "Good Job, little buddy you deleted a product."
   end
 
 
