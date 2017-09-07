@@ -1,13 +1,14 @@
 class ProductsController < ApplicationController
 
   def create
-    @
+
   end
 
   def new
   end
 
   def index
+    @products = Product.all
   end
 
   def show

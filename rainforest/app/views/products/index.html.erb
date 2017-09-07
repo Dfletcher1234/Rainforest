@@ -1,0 +1,21 @@
+<h1>Product Homepage</h1>
+
+<p><% @products.each do |product| %></p>
+  <ul>
+
+
+  <li> <%= product.name %> </li>
+    <ul>
+      <li>$<%= product.price_in_cents/100 %></li>
+      <li><%= product.description  %></li>
+    </ul>
+
+
+
+  </ul>
+
+
+
+
+
+<% end %>
