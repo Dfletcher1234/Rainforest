@@ -9,6 +9,7 @@ class Product < ApplicationRecord
     sprintf("$%.2f", price_in_dollars)
   end
 
+  has_many :reviews
 
 
 end
