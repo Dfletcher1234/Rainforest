@@ -31,10 +31,6 @@ class ProductsController < ApplicationController
 
   def edit
     @product = Product.find(params[:id])
-
-
-
-
   end
 
   def update
@@ -59,14 +55,6 @@ class ProductsController < ApplicationController
     end
     flash.notice = "Good Job, little buddy you deleted a product."
   end
-
-
-
-
-
-
-
-
 
 
 
