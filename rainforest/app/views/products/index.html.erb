@@ -8,6 +8,8 @@
     <ul>
       <li>$<%= product.price_in_cents/100 %></li>
       <li><%= product.description  %></li>
+      <li><%= link_to("Product Page", "/products/#{product.id}") %></li>
+
     </ul>
   </ul>
 
