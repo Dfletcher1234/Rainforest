@@ -6,9 +6,11 @@
 <%= link_to "Edit", edit_product_path(@product)%> |
 <%= link_to "Delete", product_path(@product), method: :delete, data: {confirm: "Hmmmmmmm, are you certain?"} %>
 <hr>
-<% @product.reviews.each do |review| %>
-  <%= review.comment %> <br>
-  <%= review.created_at %> <hr>
+<% if !@product.reviews.empty? %>
+  <% @product.reviews.each do |review| %>
+    <%= review.comment %> <br>
+    <%= review.created_at %> <hr>
+  <% end %>
 <% end %>
 
 <h4>New Review</h4>
