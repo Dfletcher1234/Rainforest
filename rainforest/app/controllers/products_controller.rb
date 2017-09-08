@@ -26,7 +26,8 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
-    # @reviews =
+
+    @review = @product.reviews.new
   end
 
   def edit
@@ -55,6 +56,8 @@ class ProductsController < ApplicationController
     end
     flash.notice = "Good Job, little buddy you deleted a product."
   end
+
+
 
 
 
