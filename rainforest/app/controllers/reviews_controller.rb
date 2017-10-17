@@ -11,7 +11,7 @@ class ReviewsController < ApplicationController
   end
 
   def edit
-
+    @review = Review.fin
   end
 
   def update

@@ -1,18 +1,39 @@
-<h1>Product Homepage</h1>
 
-<p><% @products.each do |product| %></p>
-  <ul>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Product Homepage</h1>
+
+  </div>
+</div>
 
 
-  <li> <%= product.name %> </li>
-    <ul>
+<div class="jumbotron jumbotron-fluid2">
+  <div class="container">
+
+      <div class="card" style="width: 100%;">
+      <div class="card-body">
+      <p><% @products.each do |product| %></p>
+
+      <h4 class="card-title"> <%= product.name %></h4>
+
+
+      <p class="card-text">
       <li><%= product.price_in_dollars %></li>
       <li><%= product.description  %></li>
-      <li><%= link_to("Product Page", "/products/#{product.id}") %></li>
 
-    </ul>
-  </ul>
+      <button type="button" class="btn btn-outline-primary">
+      <%= link_to("Take a Look", "/products/#{product.id}") %></button>
 
-<% end %>
+      </p>
 
-<%= link_to "Create NEW!", new_product_path %>
+
+
+
+
+     <% end %>
+     </div>
+   </div>
+
+  </div>
+
+    <button type="button" class="btn btn-primary btn-lg btn-block"><%= link_to "Create NEW!", new_product_path %></button>

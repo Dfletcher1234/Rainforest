@@ -13,3 +13,39 @@
  *= require_tree .
  *= require_self
  */
+
+ body{
+  background-color: #223A5E;
+
+ }
+
+
+a {
+font-size: 20px;
+color: #C48F65;
+margin: 2px;
+
+}
+.card-text li{
+  width: 100px;
+}
+
+.btn-outline-primary a {
+  color: #223A5E;
+  font-weight: bolder;
+  border-color: #C48F65
+}
+.btn-outline-primary {
+  border-color: #C48F65;
+}
+
+.btn.btn-primary.btn-lg.btn-block{
+  border-color: white;
+  background-color: white;
+  margin-top: 1em;
+
+}
+.btn.btn-primary.btn-lg.btn-block a{
+  width: 100%;
+
+}
